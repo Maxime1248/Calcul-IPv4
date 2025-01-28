@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.otf');
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+body.light-mode {
+    background-color: #4dabf7;
+}
+
+body.dark-mode {
+    background-color: #fa5252;
+}
+
+body.dark-mode p {
+    color: white;
+}
+
+/* section {
+    height: 100%;
+} */
+
+.theme {
+    min-width: 115px;
+    max-width: 11%;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.theme:hover {
+    transform: scale(1.05);
+}
+
+.light-mode .theme {
+    background-color: white;
+}
+
+.image-du-theme {
+    filter: invert(100%);
+    height: 40px;
+    padding: 0 15px 0 5px;
+}
+
+.light-mode .image-du-theme {
+    filter: invert(0%);
+}
+
+.section-formulaire_cadre {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.section-formulaire_cadre-formulaire {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.light-mode .section-formulaire_cadre-formulaire {
+    background-color: white;
+    border: solid 1px black;
+}
+
+.dark-mode .section-formulaire_cadre-formulaire {
+    background-color: black;
+    border: solid 1px white;
+}
+
+.section-formulaire_--formulaire-titre {
+    font-family: 'Montserrat';
+    font-size: calc(1rem + 3vw);
+    margin: 0px;
+}
+
+.light-mode .section-formulaire_--formulaire-titre {
+    color: #4dabf7;
+}
+
+.dark-mode .section-formulaire_--formulaire-titre {
+    color: #fa5252;
+}
+
+.section-formulaire_--formulaire-contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-formulaire_--formulaire-contenu-input {
+    width: 100%;
+    padding: 20px;
+}
+
+body.dark-mode input.section-formulaire_---input::placeholder {
+    color: rgb(204, 204, 204);
+}
+
+body.light-mode input.section-formulaire_---input::placeholder {
+    color: darkgray;
+}
+
+.section-formulaire_--formulaire-contenu-boutons {
+    display: flex;
+    gap: 5%;
+    width: 100%;
+}
+
+.section-formulaire_---boutons {
+    padding: 8px 15px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#formulaire_Calculer {
+    cursor: pointer;
+}
+
+.light-mode #formulaire_Calculer {
+    background-color: #4dabf7;
+    border: solid 1px black;
+}
+
+.dark-mode #formulaire_Calculer {
+    background-color: #fa5252;
+    border: solid 1px white;
+    color: rgb(241, 239, 239);
+}
+
+#formulaire_Reset {
+    background-color: #ced4da;
+    cursor: pointer;
+}
+
+.light-mode #formulaire_Reset {
+    border: solid 1px black;
+}
+
+.dark-mode #formulaire_Reset {
+    border: solid 1px white;
+}
+
+.section-formulaire_---input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#formulaire_ipAddress {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.light-mode #formulaire_ipAddress {
+    border: solid 1px black;
+}
+
+.dark-mode #formulaire_ipAddress {
+    border: solid 1px white;
+    background-color: black;
+}
+
+
+#formulaire_subnetMask {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.light-mode #formulaire_subnetMask {
+    border: solid 1px black;
+}
+
+.dark-mode #formulaire_subnetMask {
+    border: solid 1px white;
+    background-color: black;
+}
+
+/* STYLES DES RESULTATS */
+
+.section-resultats_cadre {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+
+.section-resultats_cadre-resultats {
+    padding: 1%;
+    border-radius: 15px;
+    width: 90%;
+    min-width: 220px;
+}
+
+.light-mode .section-resultats_cadre-resultats {
+    background-color: #e7f5ff;
+    border: solid 2px black;
+}
+
+.dark-mode .section-resultats_cadre-resultats {
+    background-color: black;
+    border: solid 2px white;
+}
+
+.section-resultats_cadre-resultats-contenu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-resultats_cadre-resultats-separation {
+    border: none;
+}
+
+.light-mode .section-resultats_cadre-resultats-separation {
+    border-top: solid 2px black;
+}
+
+.dark-mode .section-resultats_cadre-resultats-separation {
+    border-top: solid 2px white;
+}
+
+.footer_contenu {
+    display: flex;
+    justify-content: center;
+}
+
+a.footer_contenu-texte-linkedin,
+a.footer_contenu-texte-linkedin:link,
+a.footer_contenu-texte-linkedin:visited,
+a.footer_contenu-texte-linkedin:hover,
+a.footer_contenu-texte-linkedin:active {
+    color: inherit;
+    text-decoration: none;
+}
