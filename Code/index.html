@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr-FR" class="" font-size="16px">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calcul IPv4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body class="light-mode">
+
+    <header id="main-header" class="header">
+        <nav>
+            <a href="Theme"></a>
+            <a href="Formulaire"></a>
+            <a href="Résultat"></a>
+        </nav>
+    </header>
+
+    <main id="main-content" class="main-content">
+        <section id="section-theme">
+            <div class="theme" onclick="changeTheme()">
+                <img class="image-du-theme" src="Image/darkmode.png" alt="Changer de thème">
+                <p class="texte-du-theme">Dark Mode</p>
+            </div>
+        </section>
+
+        <section id="section-formulaire">
+            <div class="section-formulaire_cadre">
+                <div class="section-formulaire_cadre-formulaire">
+                    <form id="formulaire" class="section-formulaire_--formulaire" action="">
+                        <div>
+                            <h1 class="section-formulaire_--formulaire-titre">Calculateur IPv4</h2>
+                        </div>
+                        <div class="section-formulaire_--formulaire-contenu">
+                            <div class="section-formulaire_--formulaire-contenu-input">
+                                <p>Adresse IPv4</p>
+                                <input type="text" placeholder="Ex: 173.1.233.28" id="formulaire_ipAddress"
+                                    class="section-formulaire_---input">
+                                <p>Masque/CIDR</p>
+                                <input type="text" placeholder="Ex: 255.240.0.0 ou /12" id="formulaire_subnetMask"
+                                    class="section-formulaire_---input">
+                            </div>
+                            <div class="section-formulaire_--formulaire-contenu-boutons">
+                                <button id="formulaire_Calculer" class="section-formulaire_---boutons">Calculer</button>
+                                <button id="formulaire_Reset"
+                                    class="section-formulaire_---boutons">Réinitialiser</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-resultats">
+            <div class="section-resultats_cadre">
+                <div class="section-resultats_cadre-resultats">
+                    <p class="section-resultats_cadre-resultats-texte"><b>Adresse IPv4 :</b></p>
+                    <div class="section-resultats_cadre-resultats-contenu">
+                        <p>CIDR :</p>
+                        <div id="cidr"></div>
+                    </div>
+                    <div class="section-resultats_cadre-resultats-contenu">
+                        <p>Masque de réseau :</p>
+                        <div id="mask"></div>
+                    </div>
+                    <div class="section-resultats_cadre-resultats-contenu">
+                        <p>Masque inverse :</p>
+                        <div id="invertedmask"></div>
+                    </div>
+                    <hr class="section-resultats_cadre-resultats-separation">
+                    <p class="section-resultats_cadre-resultats-texte"><b>En mode réseau :</b></p>
+                    <div class="section-resultats_cadre-resultats-contenu">
+                        <p>Adresse réseau :</p>
+                        <div id="networkaddress"></div>
+                    </div>
+                    <div class="section-resultats_cadre-resultats-contenu">
+                        <p>Première adresse :</p>
+                        <div id="firstaddress"></div>
+                    </div>
+                    <div class="section-resultats_cadre-resultats-contenu">
+                        <p>Dernière adresse :</p>
+                        <div id="lastaddress"></div>
+                    </div>
+                    <div class="section-resultats_cadre-resultats-contenu">
+                        <p>Adresse de broadcast :</p>
+                        <div id="broadcastaddress"></div>
+                    </div>
+                    <div class="section-resultats_cadre-resultats-contenu">
+                        <p>Nombre d'adresses IP disponibles :</p>
+                        <div id="ttladdresses"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer" class="footer">
+        <div class="footer_contenu">
+            <p class="footer_contenu-texte">&copy; 2025<a class="footer_contenu-texte-linkedin"
+                    href="https://www.linkedin.com/in/maxime-folliot"> Folliot.</a> Tous
+                droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
